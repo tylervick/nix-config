@@ -3,4 +3,5 @@ _:
 [
   "swiftlint"
   "swiftformat"
+  "mackup"
 ]

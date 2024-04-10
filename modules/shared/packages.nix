@@ -31,6 +31,10 @@ with pkgs; [
   docker
   docker-compose
   rclone
+  podman
+  podman-compose
+  podman-tui
+  qemu # needed for podman
 
   # Media-related packages
   dejavu_fonts
