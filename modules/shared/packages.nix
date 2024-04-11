@@ -81,4 +81,8 @@ with pkgs; [
   # Golang
   go
   gopls
+  gotests
+  gomodifytags
+  go-tools
+  gotools
 ]
