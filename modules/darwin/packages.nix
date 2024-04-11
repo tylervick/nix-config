@@ -3,8 +3,8 @@
 with pkgs;
 let shared-packages = import ../shared/packages.nix { inherit pkgs; };  in
 shared-packages ++ [
+  # TODO: Need a better way to add Xcode instead of darwin.xcode
   dockutil
-  darwin.xcode_15_1
   rectangle
   iterm2
   tart
