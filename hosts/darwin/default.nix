@@ -1,6 +1,6 @@
 { agenix, config, pkgs, lib, ... }:
 
-let user = "tyler"; in
+let user = "tyler.vick.-nd"; in
 
 {
 
@@ -60,8 +60,8 @@ let user = "tyler"; in
   };
 
   networking = {
-    computerName = "KPWGV9WGPG";
-    hostName = "KPWGV9WGPG";
+    computerName = "FQX3KVDXR7";
+    hostName = "FQX3KVDXR7";
   };
 
   system = {
