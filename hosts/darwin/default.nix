@@ -98,10 +98,6 @@ let user = "tyler"; in
 
         # 120, 94, 68, 35, 25, 15
         # InitialKeyRepeat = 15;
-
-        # "com.apple.mouse.tapBehavior" = 1;
-        # "com.apple.sound.beep.volume" = 0.0;
-        # "com.apple.sound.beep.feedback" = 0;
       };
 
       dock = {
@@ -134,25 +130,6 @@ let user = "tyler"; in
       CustomUserPreferences = {
         "com.apple.finder" = {
 
-        };
-
-        "com.bjango.istatmenus6.extras.plist" = {
-          "Battery_ColorGraphAirpods-Standard" = "0.00 0.83 0.00 1.00";
-          "Battery_ColorGraphAirpodsLow-Standard" = "1.00 0.00 0.00 1.00";
-          "Battery_ColorGraphBluetooth-Standard" = "0.00 0.83 0.00 1.00";
-          "Battery_ColorGraphBluetoothLow-Standard" = "1.00 0.00 0.00 1.00";
-          "Battery_ColorGraphShowIcons" = 1;
-          "Battery_DropdownOrderDisabled" = "";
-          # "Battery_MenubarMode" = [
-          #   {
-          #     "key" = "4";
-          #     "uuid" = "C8A29EF5-87CA-44EA-82E9-139E8EBF8CAA";
-          #   }
-          #   {
-          #     "key" = "0";
-          #     "uuid" = "AA1FB648-4B40-4A6F-8348-77C015C81A84";
-          #   }
-          # ];
         };
       };
 
