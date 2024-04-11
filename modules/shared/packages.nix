@@ -31,6 +31,7 @@ with pkgs; [
   docker
   docker-compose
   rclone
+  colima
   podman
   podman-compose
   podman-tui

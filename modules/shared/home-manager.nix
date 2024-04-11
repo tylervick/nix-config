@@ -19,16 +19,16 @@ let name = "Tyler Vick";
       ];
     };
     plugins = [
-      # {
-      #   name = "powerlevel10k";
-      #   src = pkgs.zsh-powerlevel10k;
-      #   file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-      # }
-      # {
-      #   name = "powerlevel10k-config";
-      #   src = lib.cleanSource ./config;
-      #   file = "p10k.zsh";
-      # }
+      {
+        name = "powerlevel10k";
+        src = pkgs.zsh-powerlevel10k;
+        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      }
+      {
+        name = "powerlevel10k-config";
+        src = lib.cleanSource ./config;
+        file = "p10k.zsh";
+      }
     ];
     shellAliases = {
       sudo = "sudo ";
@@ -156,7 +156,12 @@ let name = "Tyler Vick";
       };
       pull.rebase = true;
       rebase.autoStash = true;
+      gpg.format = "ssh";
+      "gpg \"ssh\"".program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+      commit.gpgSign = true;
+      
     };
+    signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHkejJ4VH/xkMcuLFElyi2U/5S2UBYr8LPKipgUq7Ggx";
   };
 
   vim = {

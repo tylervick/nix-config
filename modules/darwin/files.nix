@@ -8,15 +8,15 @@ let
   "${xdg_configHome}/1Password/ssh/agent.toml" = {
     text = ''
       [[ssh-keys]]
-      item = "github.com/tylervick"
-      vault = "Personal"
-
-      [[ssh-keys]]
-      item = "Unraid SSH"
+      item = "github.com"
       vault = "Personal"
 
       [[ssh-keys]]
       item = "Disney SSH"
+      vault = "Personal"
+
+      [[ssh-keys]]
+      item = "Unraid SSH"
       vault = "Personal"
 
       [[ssh-keys]]

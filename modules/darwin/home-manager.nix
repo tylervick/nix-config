@@ -68,13 +68,13 @@ in
   local.dock.enable = true;
   local.dock.entries = [
     { path = "/Applications/Firefox.app/"; }
-    { path = "/System/Applications/Messages.app/"; }
+    { path = "/Applications/Slack.app/"; }
     { path = "/System/Applications/Home.app/"; }
     { path = "/Applications/Visual Studio Code.app/"; }
     { path = "/Applications/Xcode.app/"; }
     { path = "/Applications/Sublime Text.app/"; }
     { path = "/Applications/Obsidian.app/"; }
-    { path = "/nix/store/q0pzz82z6wfh6j99kbiz891xi8y5g5yg-iterm2-3.4.23/Applications/iTerm2.app/"; }
+    { path = "${pkgs.iterm2}/Applications/iTerm2.app/"; }
     {
       path = "${config.users.users.${user}.home}/Downloads";
       section = "others";

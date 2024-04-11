@@ -29,6 +29,7 @@ _:
   # Productivity Tools
   "alfred"
   "bartender"
+  "obsidian"
 
   # Browsers
   "google-chrome"

@@ -79,6 +79,7 @@ let user = "tyler"; in
       # };
 
       NSGlobalDomain = {
+        AppleInterfaceStyle = "Dark";
         AppleShowAllExtensions = true;
         AppleShowAllFiles = true; # Show hidden files
         ApplePressAndHoldEnabled = false;
@@ -106,6 +107,7 @@ let user = "tyler"; in
         launchanim = true;
         orientation = "left";
         tilesize = 48;
+        mineffect = "genie";
       };
 
       finder = {
@@ -128,10 +130,32 @@ let user = "tyler"; in
       };
 
       CustomUserPreferences = {
-        "com.apple.finder" = {
-
+        # TODO: Mouse options don't seem to take effect
+        "com.apple.driver.AppleBluetoothMultitouch.mouse" = {
+          MouseButtonDivision = 55;
+          MouseButtonStyle = "TwoButton";
+          MouseHorizontalScroll = 1;
+          MouseMomentumScroll = 1;
+          MouseOneFingerDoubleTapGesture = 1;
+          MouseTwoFingerDoubleTapGesture = 3;
+          MouseTwoFingerHorizSwipeGesture = 2;
+          MouseVerticalScroll = 1;
+          UserPreferences = 1;
         };
-      };
+
+        "com.apple.AppleMultitouchMouse" = {
+          MouseButtonDivision = 55;
+          MouseButtonStyle = "TwoButton";
+          MouseHorizontalScroll = 1;
+          MouseMomentumScroll = 1;
+          MouseOneFingerDoubleTapGesture = 1;
+          MouseTwoFingerDoubleTapGesture = 3;
+          MouseTwoFingerHorizSwipeGesture = 2;
+          MouseVerticalScroll = 1;
+          UserPreferences = 1;
+          version = 1;
+        };
+     };
 
       CustomSystemPreferences = {
         NSGlobalDomain = {
@@ -169,7 +193,7 @@ let user = "tyler"; in
         # # Outdated on High Sierra
         # # Show item info to the right of the icons on the desktop
         # echo "Setting desktop icon settings"
-        # # /usr/libexec/PlistBuddy -c "Set DesktopViewSettings:IconViewSettings:labelOnBottom false" ~/Library/Preferences/com.apple.finder.plist
+        #/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:labelOnBottom false" ~/Library/Preferences/com.apple.finder.plist
 
         # # Enable snap-to-grid for icons on the desktop and in other icon views
         # /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy kind" ~/Library/Preferences/com.apple.finder.plist
